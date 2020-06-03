@@ -5,6 +5,7 @@ $(document).ready(function(){
     console.log(fetchUrl);
        $.get(fetchUrl,function(data){
             $(".card-text").append(data.author);
+            $(".A-id").append(data.id);
             $("#newUrl").attr("href", data.download_url); 
             $("#card-img").attr("src", data.url); 
        })  
