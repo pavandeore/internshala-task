@@ -4,7 +4,7 @@ $(document).ready(function(){
     const fetchUrl = `https://picsum.photos/id/${id_no}/info`;
     console.log(fetchUrl);
        $.get(fetchUrl,function(data){
-            $(".A-text").append(data.author);
+            $(".A-name").append(data.author);
             $(".A-id").append(data.id);
             $("#newUrl").attr("href", data.download_url); 
             $("#card-img").attr("src", data.url); 
