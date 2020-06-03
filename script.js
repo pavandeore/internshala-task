@@ -7,7 +7,7 @@ $(document).ready(function(){
        $.get(fetchUrl,function(data){
             $(".card-text").append(data.author);
             $("#newUrl").attr("href", data.download_url); 
-            $(".card-text").append(data.url); 
+            $("#card-img").attr("src", data.url); 
        })  
            
 })
